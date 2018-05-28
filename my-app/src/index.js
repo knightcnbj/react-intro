@@ -66,7 +66,6 @@ class Game extends React.Component {
   }
 
   handleClick(i) {
-
     const history = this.state.history.slice(0, this.state.step + 1);
     const curr = history[history.length - 1];
     const newSquares = curr.squares.slice();
@@ -108,7 +107,6 @@ class Game extends React.Component {
     } else {
       status = 'next player is ' + (this.state.xIsNext ? 'X' : 'O');
     }
-
 
     return (
       <div className="game">
